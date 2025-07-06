@@ -1,0 +1,23 @@
+@import "tailwindcss";
+body {
+  color: white;
+  background-color: #1f1d2b;
+}
+.btn {
+  border: 1px solid #bcbcbc;
+  border-radius: 16px;
+  padding: 12px 36px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 183%;
+  letter-spacing: 0.12em;
+  color: #bcbcbc;
+}
+.btn:hover {
+  color: white;
+  border: 1px solid white;
+  transform: scale(1.05);
+}
+.btn:active {
+  transform: scale(1);
+}
