@@ -22,3 +22,7 @@ body {
 .btn:active {
   transform: scale(1);
 }
+.custom-pagination .ant-pagination-prev button,
+.custom-pagination .ant-pagination-next button {
+  color: white !important;
+}

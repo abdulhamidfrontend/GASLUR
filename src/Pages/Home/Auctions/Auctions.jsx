@@ -8,16 +8,16 @@ const Auctions = () => {
   return (
     <div>
       <div className="title flex items-end justify-between">
-        <h1 className="font-medium text-[48px] leading-[150%] tracking-[-0.02em] text-[#fff]">
+        <h1 className="font-medium text-[48px] max-[380px]:text-[24px] max-[600px]:text-[32px] leading-[150%] tracking-[-0.02em] text-[#fff]">
           Hot auctions
         </h1>
-        <p className="flex items-center gap-3 font-semibold text-[24px] leading-[150%] tracking-[-0.04em] text-[#d7d7d7]">
+        <p className="flex items-center gap-3 font-semibold max-[380px]:text-[16px] max-[600px]:text-[20px] text-[24px] leading-[150%] tracking-[-0.04em] text-[#d7d7d7]">
           View all
           <FaArrowRight className="text-[20px]" />
         </p>
       </div>
-      <div className="cards py-10 flex items-center justify-between">
-        <div className="card hover:scale-102  transition duration-300 w-[300px]">
+      <div className="cards py-10 grid grid-cols-4 gap-5 mx-auto w-fit max-[1375px]:grid-cols-3 max-[1005px]:grid-cols-2 max-[665px]:grid-cols-1">
+        <div className="card hover:scale-102 max-[400px]:w-[90%] mx-auto  transition duration-300 w-[300px]">
           <img src={Card1img} alt="" />
           <div className="flex items-center justify-between py-5  border-b border-[#c4c4c4]">
             <p className="font-semibold text-[16px] leading-[150%] text-[#fff]">
@@ -34,7 +34,7 @@ const Auctions = () => {
             <button className="btn transition duration-200 ">bid</button>
           </div>
         </div>
-        <div className="card hover:scale-102  transition duration-300 w-[300px]">
+        <div className="card hover:scale-102 max-[400px]:w-[90%] mx-auto  transition duration-300 w-[300px]">
           <img src={Card2img} alt="" />
           <div className="flex items-center justify-between py-5  border-b border-[#c4c4c4]">
             <p className="font-semibold text-[16px] leading-[150%] text-[#fff]">
@@ -51,7 +51,7 @@ const Auctions = () => {
             <button className="btn transition duration-200 ">bid</button>
           </div>
         </div>
-        <div className="card hover:scale-102  transition duration-300 w-[300px]">
+        <div className="card hover:scale-102 max-[400px]:w-[90%] mx-auto  transition duration-300 w-[300px]">
           <img src={Card3img} alt="" />
           <div className="flex items-center justify-between py-5  border-b border-[#c4c4c4]">
             <p className="font-semibold text-[16px] leading-[150%] text-[#fff]">
@@ -68,7 +68,7 @@ const Auctions = () => {
             <button className="btn transition duration-200 ">bid</button>
           </div>
         </div>
-        <div className="card hover:scale-102  transition duration-300 w-[300px]">
+        <div className="card hover:scale-102 max-[400px]:w-[90%] mx-auto  transition duration-300 w-[300px]">
           <img src={Card4img} alt="" />
           <div className="flex items-center justify-between py-5  border-b border-[#c4c4c4]">
             <p className="font-semibold text-[16px] leading-[150%] text-[#fff]">

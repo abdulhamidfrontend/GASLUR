@@ -15,7 +15,7 @@ const Home = () => {
       </div>
       <div className="w-[90%] m-auto">
         <div data-aos="fade-down" data-aos-duration="3000">
-          <div className="Hero py-50">
+          <div className="Hero py-50 max-[650px]:py-35">
             <Hero />
           </div>
         </div>
