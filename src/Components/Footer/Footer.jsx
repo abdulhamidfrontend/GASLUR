@@ -1,6 +1,7 @@
 import { FaInstagram } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa6";
 import { TbBrandTwitter } from "react-icons/tb";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -19,16 +20,16 @@ const Footer = () => {
               Marketplace
             </h1>
             <div className="links flex flex-col gap-4 mt-6">
-              <a className="hover:underline text-[24px] max-[500px]:text-[18px] text-[#d7d7d7]">
+              <a className="hover:underline cursor-pointer  text-[24px] max-[500px]:text-[18px] text-[#d7d7d7]">
                 Home
               </a>
-              <a className="hover:underline text-[24px] max-[500px]:text-[18px] text-[#d7d7d7]">
+              <a className="hover:underline cursor-pointer  text-[24px] max-[500px]:text-[18px] text-[#d7d7d7]">
                 Activity
               </a>
-              <a className="hover:underline text-[24px] max-[500px]:text-[18px] text-[#d7d7d7]">
+              <a className="hover:underline cursor-pointer  text-[24px] max-[500px]:text-[18px] text-[#d7d7d7]">
                 Discover
               </a>
-              <a className="hover:underline text-[24px] max-[500px]:text-[18px] text-[#d7d7d7]">
+              <a className="hover:underline cursor-pointer  text-[24px] max-[500px]:text-[18px] text-[#d7d7d7]">
                 Learn more
               </a>
             </div>
@@ -39,13 +40,13 @@ const Footer = () => {
               Company
             </h1>
             <div className="links flex flex-col gap-4 mt-6">
-              <a className="hover:underline text-[24px] max-[500px]:text-[18px] text-[#d7d7d7]">
+              <a className="hover:underline cursor-pointer  text-[24px] max-[500px]:text-[18px] text-[#d7d7d7]">
                 About Us
               </a>
-              <a className="hover:underline text-[24px] max-[500px]:text-[18px] text-[#d7d7d7]">
+              <a className="hover:underline cursor-pointer  text-[24px] max-[500px]:text-[18px] text-[#d7d7d7]">
                 Services
               </a>
-              <a className="hover:underline text-[24px] max-[500px]:text-[18px] text-[#d7d7d7]">
+              <a className="hover:underline cursor-pointer  text-[24px] max-[500px]:text-[18px] text-[#d7d7d7]">
                 Portfolio
               </a>
             </div>
@@ -56,16 +57,16 @@ const Footer = () => {
               Contact
             </h1>
             <div className="links flex flex-col gap-4 mt-6">
-              <a className="hover:underline text-[24px] max-[500px]:text-[18px] text-[#d7d7d7]">
+              <a className="hover:underline cursor-pointer text-[24px] max-[500px]:text-[18px] text-[#d7d7d7]">
                 Facebook
               </a>
-              <a className="hover:underline text-[24px] max-[500px]:text-[18px] text-[#d7d7d7]">
+              <a className="hover:underline cursor-pointer text-[24px] max-[500px]:text-[18px] text-[#d7d7d7]">
                 Instagram
               </a>
-              <a className="hover:underline text-[24px] max-[500px]:text-[18px] text-[#d7d7d7]">
+              <a className="hover:underline cursor-pointer text-[24px] max-[500px]:text-[18px] text-[#d7d7d7]">
                 Twitter
               </a>
-              <a className="hover:underline text-[24px] max-[500px]:text-[18px] text-[#d7d7d7]">
+              <a className="hover:underline cursor-pointer text-[24px] max-[500px]:text-[18px] text-[#d7d7d7]">
                 Email
               </a>
             </div>
@@ -75,9 +76,23 @@ const Footer = () => {
 
       <div className="py-10 flex items-center justify-between max-[500px]:flex-col max-[500px]:gap-5 max-[500px]:text-center">
         <div className="flex items-center gap-6 max-[500px]:justify-center">
-          <FaInstagram className="text-4xl text-white" />
-          <FaFacebook className="text-4xl text-white" />
-          <TbBrandTwitter className="text-4xl text-white" />
+          <a
+            href="https://instagram.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaInstagram className="text-4xl text-white" />
+          </a>
+          <a
+            href="https://facebook.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaFacebook className="text-4xl text-white" />
+          </a>
+          <a href="https://x.com" target="_blank" rel="noopener noreferrer">
+            <TbBrandTwitter className="text-4xl text-white" />
+          </a>
         </div>
         <p className="text-[20px] max-[500px]:text-[16px] text-[#828282]">
           Copyright 2021 Gaslur
